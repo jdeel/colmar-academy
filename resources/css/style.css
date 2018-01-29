@@ -1,0 +1,82 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: gray;
+  padding: 12px 96px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
+/* Nav Bar Styles */
+
+header {
+  padding: 16px 24px;
+  justify-content: space-between;
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.logotype {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+nav {
+  align-items: center;
+}
+
+nav a {
+  margin-left: 16px;
+}
+
+/* Banner Styles */
+
+banner {
+  background-color: lightgray;
+  padding: 32px 24px;
+  align-items: center;
+}
+
+banner img {
+  width: 60%;
+  padding-right: 24px;
+}
+
+banner p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 48px;
+}
