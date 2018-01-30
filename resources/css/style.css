@@ -3,7 +3,7 @@
 html {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .flex-container {
@@ -12,19 +12,27 @@ html {
 
 h1 {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 24px;
 }
 
 h2 {
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.4;
 }
 
 .btn {
   background-color: gray;
   padding: 12px 96px;
-  font-size: 1.25rem;
   font-weight: 400;
   color: white;
 }
@@ -71,12 +79,91 @@ banner {
 
 banner img {
   width: 60%;
-  padding-right: 24px;
+  padding-right: 48px;
 }
 
 banner p {
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.4;
+  font-size: 1.25rem;
   margin-bottom: 48px;
 }
+
+/* News Section Styles */
+
+#news {
+  margin: 2px 0;
+}
+
+.news-feature {
+  width: 60%;
+  align-items: space-between;
+  padding: 32px 24px;
+  border-right: lightgray 1px solid;
+}
+
+.news-feature img {
+  width: 100%;
+}
+
+.quote {
+  padding-top: 32px;
+}
+
+.news-feature h2, .attribution {
+  padding-top: 32px;
+}
+
+.attribution {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.news-stack {
+  width: 40%;
+  flex-direction: column;
+}
+
+.news-stack img {
+  width: 35%;
+  height: auto;
+  padding-right: 24px;
+}
+
+.news-stack h3, p {
+  margin-bottom: 8px;
+}
+
+.news-item-1, .news-item-2, .news-item-3 {
+  padding: 16px;
+  align-items: center;
+  height: 33%;
+  margin-left: 1px;
+}
+
+.news-item-1 {
+  border-bottom: lightgray 1px solid;
+  margin-bottom: 1px;
+}
+
+.news-item-2 {
+  border-top: lightgray 1px solid;
+}
+
+.news-item-3 {
+  background-color: lightgray;
+}
+
+.read-more {
+  font-weight: 400;
+  color: blue;
+}
+
+/* Course Section Styles */
+
+#courses {
+  background-color: lightgray;
+}
+
+/* Thesis Section Styles */
+
+/* Footer Styles */
