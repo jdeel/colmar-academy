@@ -105,12 +105,8 @@ banner p {
   width: 100%;
 }
 
-.quote {
-  padding-top: 32px;
-}
-
-.news-feature h2, .attribution {
-  padding-top: 32px;
+.news-feature h2, .quote, .attribution {
+  padding-top: 24px;
 }
 
 .attribution {
@@ -130,7 +126,7 @@ banner p {
   padding-right: 24px;
 }
 
-.news-stack h3, p {
+.news-stack h3, .news-stack p {
   margin-bottom: 8px;
 }
 
@@ -197,5 +193,57 @@ banner p {
 }
 
 /* Thesis Section Styles */
+
+#thesis {
+  flex-direction: column;
+  padding-right: 8px;
+}
+
+#thesis h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  padding-top: 32px;
+}
+
+.vid-feature {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.vid-feature video {
+  width: 100%;
+}
+
+.vid-feature h3, .vid-feature p {
+  padding-top: 24px;
+}
+
+.thesis-stack {
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.thesis-stack img {
+  width: 35%;
+  height: auto;
+  padding-right: 24px;
+}
+
+.thesis-stack h3 {
+  margin-bottom: 8px;
+}
+
+.thesis-item-1, .thesis-item-2 {
+  padding: 16px;
+  height: 33%;
+  align-items: center;
+}
+
+.thesis-item-1 {
+  background-color: lightgray;
+}
 
 /* Footer Styles */
