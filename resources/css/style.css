@@ -61,12 +61,43 @@ header {
   font-size: 1.25rem;
 }
 
-nav {
+.desktop-nav {
   align-items: center;
 }
 
-nav a {
+.desktop-nav a {
   margin-left: 16px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    padding: 16px 0 16px 24px;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    height: 32px;
+    justify-content: center;
+  }
+
+  .logotype {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /* Banner Styles */
