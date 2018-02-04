@@ -14,37 +14,56 @@ h1 {
   font-weight: 900;
   font-size: 2.5rem;
   margin-bottom: 24px;
+  color: #2d2d2d;
 }
 
 h2 {
   font-weight: 900;
   font-size: 1.5rem;
+  color: #2d2d2d;
 }
 
 h3 {
   font-weight: 700;
   font-size: 1.25rem;
+  color: #2d2d2d;
 }
 
 p {
   line-height: 1.4;
+  color: #2d2d2d;
+}
+
+a {
+  color: #4d4d4d;
+  transition: all 1s ease;
+}
+
+a:hover {
+  color: #6CA0DC;
 }
 
 .btn {
-  background-color: gray;
+  background-color: #2D435C;
   padding: 12px;
   width: 70%;
   justify-content: center;
   font-weight: 400;
   color: white;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #D2F1F2;
 }
 
 /* Nav Bar Styles */
-
 /* Desktop Nav */
+
 header {
   padding: 16px 24px;
   justify-content: space-between;
+  border-bottom: 5px solid #D2F1F2;
 }
 
 .logo {
@@ -55,8 +74,13 @@ header {
   height: 32px;
 }
 
+.logotype {
+  color: #00A68C;
+}
+
 .bold {
   font-weight: 700;
+  color: #2D435C;
 }
 
 .logotype {
@@ -108,7 +132,10 @@ header {
 /* Banner Styles */
 
 banner {
-  background-color: lightgray;
+  background-image: linear-gradient(
+      45deg,
+      #00A68C, #85F2E6
+    );
   padding: 32px 24px;
   align-items: center;
 }
@@ -176,7 +203,7 @@ banner p {
   flex-shrink: 10;
   align-items: space-between;
   padding: 32px 24px;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #D7EBFF;
 }
 
 .news-feature img {
@@ -221,22 +248,26 @@ banner p {
 }
 
 .news-item-1 {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #D2F1F2;
   margin-bottom: 1px;
 }
 
 .news-item-2 {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #D2F1F2;
 }
 
 .news-item-3 {
-  background-color: lightgray;
+  background-color: #D2F1F2;
   margin-left: 0;
 }
 
 .read-more {
   font-weight: 400;
-  color: blue;
+  color: #6CA0DC;
+}
+
+.read-more:hover {
+  color: #4d4d4d;
 }
 
 @media screen and (max-width: 860px) {
@@ -331,7 +362,10 @@ banner p {
 /* Course Section Styles */
 
 #courses {
-  background-color: lightgray;
+  background-image: linear-gradient(
+      45deg,
+      #00A68C, #85F2E6
+    );
   padding: 32px 56px;
   flex-flow: wrap;
   justify-content: center;
@@ -355,6 +389,7 @@ banner p {
 }
 
 .cat-description {
+  flex-direction: column;
   background-color: white;
   padding: 16px 16px 24px 16px;
   min-height: 9rem;
@@ -375,13 +410,9 @@ banner p {
   }
 }
 
-@media screen and (max-width: 550px) {
-  #courses {
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
-  }
+/* Mobile Courses */
 
+@media screen and (max-width: 550px) {
   #courses h2 {
     font-size: 2.5rem;
   }
@@ -395,14 +426,21 @@ banner p {
   }
 
   .cat-description {
-    background-color: lightgray;
     min-height: 0rem;
     align-items: center;
+  }
+
+  .cat-description:hover {
+    background-color: #D2F1F2;
   }
 
   .cat-description h3 {
     font-size: 2rem;
     padding: 16px 32px;
+  }
+
+  .cat-description h3:hover {
+    color: #6CA0DC;
   }
 }
 
@@ -459,7 +497,7 @@ banner p {
 }
 
 .thesis-item-1 {
-  background-color: lightgray;
+  background-color: #D2F1F2;
 }
 
 @media screen and (max-width: 860px) {
@@ -472,13 +510,15 @@ banner p {
   }
 }
 
+/* Mobile Thesis */
+
 @media screen and (max-width: 550px) {
   #thesis {
     padding: 16px 16px 32px 16px;
   }
 
   #thesis h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .vid-feature {
@@ -496,7 +536,7 @@ banner p {
 footer {
   padding: 16px 24px;
   margin: 0 2px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #D2F1F2;
   justify-content: space-between;
   align-items: center;
 }
