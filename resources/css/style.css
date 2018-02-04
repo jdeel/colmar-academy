@@ -32,7 +32,9 @@ p {
 
 .btn {
   background-color: gray;
-  padding: 12px 96px;
+  padding: 12px;
+  width: 70%;
+  justify-content: center;
   font-weight: 400;
   color: white;
 }
@@ -76,7 +78,7 @@ header {
 
 /* Mobile Nav */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 16px 0 16px 24px;
     justify-content: space-around;
@@ -117,6 +119,10 @@ banner img {
   flex-shrink: 10;
 }
 
+.banner-txt {
+  flex-direction: column;
+}
+
 banner p {
   font-weight: 700;
   font-size: 1.25rem;
@@ -127,6 +133,35 @@ banner p {
 @media screen and (max-width: 860px) {
   banner img {
     width: 50%;
+  }
+}
+
+/* Mobile Banner */
+
+@media screen and (max-width: 768px) {
+  banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  banner img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .banner-txt {
+    padding: 48px 16px;
+  }
+
+  #banner-btn {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 80%;
+    justify-content: center;
+    padding: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -164,10 +199,14 @@ banner p {
   padding-bottom: 32px;
 }
 
-.news-stack img {
+.lg-display {
   width: 35%;
   height: auto;
   padding-right: 24px;
+}
+
+.sm-display {
+  display: none;
 }
 
 .news-stack h3, .news-stack p {
@@ -210,6 +249,85 @@ banner p {
   }
 }
 
+/* Mobile News */
+/* Tablet Screens */
+
+@media screen and (max-width: 768px) {
+  .news-feature {
+    display: none;
+  }
+
+  .news-stack {
+    width: 100%;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 16px 16px 32px 16px;
+  }
+
+  .news-item-1, .news-item-2, .news-item-3 {
+    padding: 0;
+    align-items: center;
+    height: 33%;
+    margin-left: 0;
+  }
+
+  .news-item-1 {
+    border-bottom: 0;
+    margin-bottom: 64px;
+  }
+
+  .news-item-2 {
+    border-top: 0;
+    margin-bottom: 64px;
+  }
+
+  .news-item-3 {
+    background-color: white;
+    margin-left: 0;
+  }
+
+  .news-stack h3 {
+    font-size: 2rem;
+  }
+
+  .news-stack p {
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+  }
+
+  .news-stack a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile News */
+/* Phone Screens */
+
+@media screen and (max-width: 550px) {
+  .news-stack {
+    padding: 16px 16px 32px 16px;
+  }
+
+  .news-item-1, .news-item-2, .news-item-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .lg-display {
+    display: none;
+  }
+
+  .sm-display {
+    display: flex;
+    width: 100%;
+  }
+
+  .news-txt {
+    padding: 48px 16px;
+  }
+}
+
 /* Course Section Styles */
 
 #courses {
@@ -249,12 +367,42 @@ banner p {
 
 @media screen and (max-width: 860px) {
   #courses {
-    background-color: lightgray;
     padding: 32px 32px;
   }
 
   .course-category {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #courses {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+  }
+
+  #courses h2 {
+    font-size: 2.5rem;
+  }
+
+  .course-category {
+    width: 100%;
+  }
+
+  .course-category img, .cat-description p {
+    display: none;
+  }
+
+  .cat-description {
+    background-color: lightgray;
+    min-height: 0rem;
+    align-items: center;
+  }
+
+  .cat-description h3 {
+    font-size: 2rem;
+    padding: 16px 32px;
   }
 }
 
@@ -321,6 +469,25 @@ banner p {
 
   .thesis-stack {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #thesis {
+    padding: 16px 16px 32px 16px;
+  }
+
+  #thesis h2 {
+    font-size: 2rem;
+  }
+
+  .vid-feature {
+    width: 100%;
+    margin: 32px 0 0 0;
+  }
+
+  .thesis-stack, .vid-feature h3, .vid-feature p {
+    display: none;
   }
 }
 
